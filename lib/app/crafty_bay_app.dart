@@ -5,7 +5,6 @@ import 'package:crafty_bay/features/shared/presentation/providers/main_nav_provi
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
-
 import '../features/auth/presentation/screens/splash_screen.dart';
 import '../features/home/presentation/providers/home_slider_provider.dart';
 import '../l10n/app_localizations.dart';
@@ -36,6 +35,7 @@ class CraftyBayApp extends StatelessWidget {
           return Consumer<ThemeProvider>(
               builder: (context, themeProvider, _) {
                 return MaterialApp(
+                  debugShowCheckedModeBanner: false,
                   title: 'Crafty Bay',
                   navigatorKey: navigatorKey,
                   initialRoute: SplashScreen.name,
