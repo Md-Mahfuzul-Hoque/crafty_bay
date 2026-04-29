@@ -1,13 +1,14 @@
 import 'package:crafty_bay/features/auth/data/models/verify_otp_params.dart';
 import 'package:crafty_bay/features/auth/presentation/providers/verify_otp_provider.dart';
 import 'package:crafty_bay/features/shared/presentation/screens/main_nav_holder_screen.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/snack_bar_message.dart';
+
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../app/app_colors.dart';
 import '../../../../app/extensions/utils_extension.dart';
+import '../../../shared/presentation/widgets/snack_bar_message.dart';
 import '../widgets/app_logo.dart';
 import '../widgets/resend_otp_section.dart';
 

@@ -2,10 +2,12 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:crafty_bay/app/app_colors.dart';
 import 'package:crafty_bay/features/home/presentation/providers/home_slider_provider.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/app_network_image.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/center_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../../shared/presentation/widgets/app_network_image.dart';
+import '../../../shared/presentation/widgets/center_progress_indicator.dart';
+
 
 class HomeCarouselSlider extends StatefulWidget {
   const HomeCarouselSlider({super.key});

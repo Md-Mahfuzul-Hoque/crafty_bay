@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/presentation/widgets/product_card.dart';
 
 class HomeProductList extends StatelessWidget {
   const HomeProductList({super.key});
@@ -13,7 +12,8 @@ class HomeProductList extends StatelessWidget {
         itemCount: 10,
         scrollDirection: .horizontal,
         separatorBuilder: (context, index) => const SizedBox(width: 8),
-        itemBuilder: (context, index) => const ProductCard(),
+        // itemBuilder: (context, index) => const ProductCard(),
+        itemBuilder: (context, index) => const SizedBox(),
       ),
     );
   }

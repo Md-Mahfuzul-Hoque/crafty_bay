@@ -1,11 +1,11 @@
 import 'package:crafty_bay/app/validators.dart';
 import 'package:crafty_bay/features/auth/presentation/providers/sign_in_provider.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/center_progress_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../app/extensions/utils_extension.dart';
 import '../../../shared/presentation/screens/main_nav_holder_screen.dart';
+import '../../../shared/presentation/widgets/center_progress_indicator.dart';
 import '../../../shared/presentation/widgets/snack_bar_message.dart';
 import '../../data/models/sign_in_params.dart';
 import '../widgets/app_logo.dart';

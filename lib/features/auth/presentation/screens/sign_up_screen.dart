@@ -1,13 +1,13 @@
 import 'package:crafty_bay/features/auth/data/models/sign_up_params.dart';
 import 'package:crafty_bay/features/auth/presentation/providers/sign_up_provider.dart';
 import 'package:crafty_bay/features/auth/presentation/screens/sign_in_screen.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/center_progress_indicator.dart';
-import 'package:crafty_bay/features/shared/presentation/widgets/snack_bar_message.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../../../../app/extensions/utils_extension.dart';
 import '../../../../app/validators.dart';
+import '../../../shared/presentation/widgets/center_progress_indicator.dart';
+import '../../../shared/presentation/widgets/snack_bar_message.dart';
 import '../widgets/app_logo.dart';
 import 'verify_otp_screen.dart';
 

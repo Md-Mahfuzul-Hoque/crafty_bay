@@ -2,12 +2,12 @@ import 'package:crafty_bay/features/product/presentation/screens/product_details
 import 'package:crafty_bay/features/shared/data/models/category_model.dart';
 import 'package:flutter/material.dart';
 
-import '../../features/auth/presentation/screens/sign_in_screen.dart';
-import '../../features/auth/presentation/screens/sign_up_screen.dart';
-import '../../features/auth/presentation/screens/splash_screen.dart';
-import '../../features/auth/presentation/screens/verify_otp_screen.dart';
-import '../../features/product/presentation/screens/product_list_screen.dart';
-import '../../features/shared/presentation/screens/main_nav_holder_screen.dart';
+import '../features/auth/presentation/screens/sign_in_screen.dart';
+import '../features/auth/presentation/screens/sign_up_screen.dart';
+import '../features/auth/presentation/screens/splash_screen.dart';
+import '../features/auth/presentation/screens/verify_otp_screen.dart';
+import '../features/product/presentation/screens/product_list_screen.dart';
+import '../features/shared/presentation/screens/main_nav_holder_screen.dart';
 
 class Routes {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -29,7 +29,8 @@ class Routes {
         final category = settings.arguments as CategoryModel;
         widget = ProductListScreen(category: category);
       case ProductDetailsScreen.name:
-        widget = ProductDetailsScreen();
+        final productId = settings.arguments as String;
+        widget = ProductDetailsScreen(productId: productId);
     }
 
     return MaterialPageRoute(builder: (context) => widget);
